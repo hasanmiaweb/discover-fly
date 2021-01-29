@@ -30,8 +30,14 @@ function totalResult() {
 
 document.getElementById("bookNow").addEventListener("click", function () {
   document.getElementById("orderinvoice").style.display = "block";
-  const FlyingFrom = document.getElementById("FlyingFrom").value;
-  const FlyingFrom1 = document.getElementById("FlyingFrom2").value;
-  document.getElementById("FlyingFrom1").innerText = FlyingFrom;
-  document.getElementById("FlyingFrom2").innerText = FlyingFrom1;
+  userinput("flyingFrom", "flyingFrom");
+  userinput("flyingTo", "FlyingTo");
+  userinput("departure", "departure");
+  userinput("return", "return");
 });
+
+// order invoice Handle
+function userinput(input, output) {
+  const userInput = document.getElementById(input + "-userInput").value;
+  document.getElementById(output + "-userinfo").innerText = userInput;
+}

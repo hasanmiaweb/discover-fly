@@ -32,20 +32,21 @@
             <h3>Booking Flights</h3>
             <div class="input-group">
                 <label for="">Flying From</label>
-                <input id="FlyingFrom" class="inp-style" type="text" name="" placeholder="Dhake, Bangladesh">
+                <input id="flyingFrom-userInput" class="inp-style" type="text" name="" placeholder="Dhake, Bangladesh">
+                
             </div>
             <div class="input-group">
                 <label for="">Flying To</label>
-                <input id="FlyingFrom2" class="inp-style" type="text" name="" placeholder="New York, United States">
+                <input id="flyingTo-userInput" class="inp-style" type="text" name="" placeholder="New York, United States">
             </div>
             <div class="inputs">
                 <div class="input-group">
                     <label" for="">Departure</label>
-                    <input class="inp-style" type="date" name="">
+                    <input id="departure-userInput" class="inp-style" type="date" name="">
                 </div>
                 <div class="input-group">
                     <label for="">Return</label>
-                    <input class="inp-style" type="date" name="">
+                    <input id="return-userInput" class="inp-style" type="date" name="">
                 </div>
             </div>
             <div class="input-group f-class">
@@ -102,8 +103,14 @@
             <h1>discover <br> around the world</h1>
             <p>Lorem ipsum dolor sit amet consectetur adipisicingelit. Provident voluptatibus quam fuga laborumalias veniam libero autem quasi maxime ullam vero nama imi dolor, architecto ab facilis eaque deserunt nobise voluptatibus quam</p>
             <section id="orderinvoice">
-                <h5 id="FlyingFrom1">Flying From</h5>
-                <h5 id="FlyingFrom2">Flying To</h5>
+                <h2 class="orderin">Order invoice </h2>
+                <span>Flying From: <span id="flyingFrom-userinfo"> hh</span> </span><br>
+                <span>Flying To: <span id="FlyingTo-userinfo"> fdgfdg</span> </span> <br>
+                <span>Departure: <span id="departure-userinfo"> hh</span> </span> <br>
+                <span>Return: <span id="return-userinfo"> hh</span> </span> <br>
+                <span>Subtotal: <span id="subtotal-userinfo"> hh</span> </span> <br>
+                <span>Charge 10% VAT:<span id="charge-userinfo"> hh</span> </span> <br>
+                <span>Total: <span id="total-userinfo"> hh</span> </span>
             </section>
         </div>
     </section>
@@ -114,9 +121,6 @@
 
     <!--Javascript Link Start-->
         <script src="js/main.js"></script>
-        <script>
- 
-        </script>
     <!--Javascript Link End-->
 </body>
 

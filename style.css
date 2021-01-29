@@ -131,12 +131,25 @@ a.active {
 }
 
 /* Order invoice */
+#userinfo {
+  color: black;
+}
+
+/*Text Color*/
+#flyingFrom-userinfo,
+#FlyingTo-userinfo,
+#departure-userinfo,
+#return-userinfo {
+  color: black;
+}
+.orderin {
+  text-align: center;
+}
 #orderinvoice {
   background: #ffffff;
   width: 100%;
   border: 3px dotted #ff0505;
   margin-top: 30px;
-  /* padding: 100px; */
   padding: 10px;
   display: none;
   color: orange;
