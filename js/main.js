@@ -34,6 +34,18 @@ document.getElementById("bookNow").addEventListener("click", function () {
   userinput("flyingTo", "FlyingTo");
   userinput("departure", "departure");
   userinput("return", "return");
+  //Payment Paid
+  const firstClassInput = document.getElementById("firstClassCount");
+  const firstClassValue = parseInt(firstClassInput.value);
+  const economyCountInput = document.getElementById("economyCount");
+  const economyCountValue = parseInt(economyCountInput.value);
+
+  const SubtotalCost = firstClassValue * 150 + economyCountValue * 100;
+  document.getElementById("subtotalorderIn").innerText = "$" + SubtotalCost;
+  const tax = SubtotalCost * 0.1;
+  document.getElementById("vatCharge").innerText = "$" + tax;
+  const finalCost = SubtotalCost + tax;
+  document.getElementById("TotalAmmount").innerText = "$" + finalCost;
 });
 
 // order invoice Handle

@@ -139,18 +139,36 @@ a.active {
 #flyingFrom-userinfo,
 #FlyingTo-userinfo,
 #departure-userinfo,
-#return-userinfo {
+#return-userinfo,
+#subtotalorderIn,
+#vatCharge,
+#TotalAmmount {
   color: black;
+  font-size: 18px;
+  font-weight: 600;
+  font-family: monospace;
+}
+
+.paid {
+  color: #1db31d;
+  font-size: 32px;
+  font-family: auto;
+  font-weight: 700;
 }
 .orderin {
   text-align: center;
+  color: #1db31d;
+  font-size: 40px;
+  border-bottom: 3px solid #eaeaea;
 }
 #orderinvoice {
   background: #ffffff;
   width: 100%;
-  border: 3px dotted #ff0505;
+  border: 3px solid #eaeaea;
   margin-top: 30px;
   padding: 10px;
   display: none;
   color: orange;
+  font-size: 16px;
+  font-weight: 700;
 }
